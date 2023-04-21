@@ -25,6 +25,7 @@ function Login() {
 function Nav() {
     return (
         <BrowserRouter>
+        <div className="item-nav">
         <nav>
             <Link to="/about" className="nav-item">About</Link>
             <Link to="/menu" className="nav-item">Menu</Link>
@@ -39,6 +40,8 @@ function Nav() {
                 <Route path="/orderonline" element={<Order />}></Route>
                 <Route path="/login" element={<Login />}></Route>
             </Routes>
+        
+        </div>
         </BrowserRouter>
     );
   }
